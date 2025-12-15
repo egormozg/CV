@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import meImage from './I.jpg';
   
   // --- Internationalization (i18n) Content Object ---
   const content = {
@@ -193,7 +194,7 @@
 
   <header class="card">
     <div class="card-left">
-      <img src="/I.jpg" alt="Photo of {t.name}" class="profile-photo"/>
+      <img src={meImage} alt="Photo of {t.name}" class="profile-photo"/>
     </div>
     <div class="card-right">
       <h1>{t.name}</h1>
