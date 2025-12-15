@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import meImage from './I.jpg';
+  import meImage from './assets/I.jpg';
   
   // --- Internationalization (i18n) Content Object ---
   const content = {
