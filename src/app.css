@@ -1,0 +1,323 @@
+:root {
+  --primary-color: #0d6efd; /* A slightly richer blue */
+  --secondary-color: #6c757d; /* A cool gray */
+  --background-color: #f4f7f9;
+  --surface-color: #ffffff;
+  --text-primary: #212529;
+  --text-secondary: #495057;
+  --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --box-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+}
+
+/* Reset some browser defaults */
+body, h1, h2, h3, h4, h5, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--text-primary);
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+    max-width: 950px;
+    width: 100%;
+    margin: 2rem;
+}
+
+/* Header Card Styles */
+.card {
+  display: flex;
+  background: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.card-left {
+  flex: 0 0 320px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-right {
+  flex-grow: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-right h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.card-right h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-info a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact-info a:hover {
+  color: var(--primary-color);
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* Main CV Content Styles */
+.cv-content {
+    background: var(--surface-color);
+    padding: 50px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.cv-content section {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 2rem;
+}
+
+.cv-content section:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cv-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    display: inline-block;
+    position: relative;
+}
+.cv-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+
+/* Summary Section */
+#summary p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.skill-item strong {
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+.skill-item span {
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* Language Tags within Skills */
+.language-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.language-tag {
+    background: var(--primary-color);
+    color: var(--surface-color);
+    padding: 0.5rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.language-tag strong {
+    color: var(--surface-color);
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+
+/* Experience, Awards, Training Sections */
+.job, .award-item, .training-item, .competency-item {
+    margin-bottom: 2rem;
+}
+
+/* Competencies Section */
+.competency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.competency-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.competency-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.competency-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.competency-item p {
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+
+.cv-content h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.cv-content h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.cv-content i {
+    font-style: italic;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.cv-content ul {
+    padding-left: 5px;
+}
+
+.cv-content li {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.cv-content li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--primary-color);
+}
+
+.cv-content li strong {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card-left {
+     height: auto;
+     max-height: 400px;
+  }
+  .card-right { padding: 25px; }
+  .cv-content { padding: 25px; }
+
+  .card-right h1 { font-size: 2.2rem; }
+  .cv-content h3 { font-size: 1.6rem; }
+}
