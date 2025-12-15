@@ -1,7 +1,9 @@
 <script>
-  import { onMount } from 'svelte';
+  // Svelte 5 Runes syntax
   import meImage from './assets/I.jpg';
-  
+
+  let lang = $state('en');
+
   // --- Internationalization (i18n) Content Object ---
   const content = {
     en: {
@@ -172,24 +174,19 @@
     }
   };
 
-  // --- Language State ---
-  let lang = 'en';
-  $: t = content[lang]; // Derived store for current language's content
+  let t = $derived(content[lang]);
 
-  // Set document language attribute for accessibility
-  onMount(() => {
+  $effect(() => {
+    if (typeof document !== 'undefined') {
       document.documentElement.lang = lang;
+    }
   });
-
-  $: if (typeof document !== 'undefined') {
-      document.documentElement.lang = lang;
-  }
 </script>
 
 <div class="container">  
   <div class="lang-switcher">
-    <button class:active={lang === 'en'} on:click={() => lang = 'en'}>EN</button>
-    <button class:active={lang === 'ru'} on:click={() => lang = 'ru'}>RU</button>
+    <button class:active={lang === 'en'} onclick={() => lang = 'en'}>EN</button>
+    <button class:active={lang === 'ru'} onclick={() => lang = 'ru'}>RU</button>
   </div>
 
   <header class="card">
