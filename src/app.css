@@ -1,3 +1,9 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary-color: #0d6efd;
   --secondary-color: #495057; /* Darkened for more contrast */
@@ -46,6 +52,7 @@ body {
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
+  overflow-wrap: break-word;
 }
 
 ul {
@@ -64,7 +71,6 @@ a:hover {
 
 .container {
     max-width: 950px;
-    width: 100%;
     margin: 2rem;
     position: relative; /* For language switcher positioning */
 }
@@ -293,18 +299,6 @@ a:hover {
     gap: 1.5rem;
 }
 
-/* Responsive design for competencies grid */
-@media (max-width: 992px) { /* Adjust breakpoint as needed */
-  .competency-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Revert to auto-fit on smaller screens */
-  }
-}
-@media (max-width: 768px) {
-  .competency-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .competency-item {
     background: var(--background-color);
     padding: 1.5rem;
@@ -381,6 +375,12 @@ a:hover {
 
 
 /* Responsive design */
+@media (max-width: 992px) {
+  .competency-grid, .skills-grid {
+    grid-template-columns: 1fr; /* Force single column on smaller screens */
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     margin: 1rem;
@@ -394,8 +394,8 @@ a:hover {
     flex-direction: column;
   }
   .card-left {
-     height: auto;
-     max-height: 400px;
+    flex: 0 0 auto; /* Allow the card left side to shrink */
+    height: 300px;
   }
   .card-right { padding: 25px; }
   .cv-content { padding: 25px; }
