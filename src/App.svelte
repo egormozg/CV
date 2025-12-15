@@ -60,8 +60,8 @@
       ],
       awards: [
         {
-          title: 'Google for Startups Cloud Program',
-          issuer: 'Pre-Seed Funding',
+          title: 'Google for Startups Program',
+          issuer: 'Ideation Funding',
           year: '2024',
           detail: 'Awarded funding and cloud credits in recognition of the project\'s innovative concept, strong technical foundation, and potential for market impact.'
         }
@@ -143,8 +143,8 @@
       ],
       awards: [
         {
-          title: 'Программа Google for Startups Cloud',
-          issuer: 'Pre-Seed финансирование',
+          title: 'Программа Google for Startups',
+          issuer: 'Ideation финансирование',
           year: '2024',
           detail: 'Получил финансирование и облачные кредиты в знак признания инновационной концепции проекта, прочной технической базы и потенциала для рыночного влияния.'
         }
