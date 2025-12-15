@@ -19,7 +19,8 @@
           skills: "Technical Skills",
           experience: "Professional Experience",
           competencies: "Core Competencies",
-          awards: "Awards & Recognition"
+          awards: "Awards & Recognition",
+          volunteering: "Community & Volunteering"
       },
       skills: [
         { category: 'Frontend', details: 'SvelteKit, Svelte 5 (Runes), JavaScript (ES6+), HTML5, CSS3, Tailwind CSS v4' },
@@ -40,7 +41,7 @@
         {
           title: 'Founder & Lead Full-Stack Engineer',
           company: 'Gifokamp',
-          company_url: 'gifokamp.com', // ADDED
+          company_url: 'gifokamp.com',
           period: '2023 – Present',
           subtitle: 'Personal Startup',
           details: [
@@ -70,7 +71,19 @@
         {
             title: "AI-Powered Development",
             detail: "Professionally leverage the power of cutting-edge AI tools in both development and research to accelerate workflows, solve complex problems, and deliver robust solutions efficiently."
+        },
+        {
+            title: "Entrepreneurial Resilience",
+            detail: "Proven initiative from childhood, having bootstrapped ventures and consistently adapted to overcome significant challenges, including adverse life events and professional setbacks. Drives projects forward with unwavering determination and a results-oriented mindset."
         }
+      ],
+      volunteering: [
+          {
+              title: "IT Specialist Volunteer",
+              organization: "Jewish Community of Moldova (JCM)",
+              period: "2022",
+              detail: "Developed and implemented IT solutions to streamline logistics and coordinate aid for Jewish refugees from Ukraine during the 2022 crisis. <a href='https://jcm.md/news/v3/' target='_blank' rel='noopener noreferrer'>Learn more</a>."
+          }
       ]
     },
     ru: {
@@ -89,7 +102,8 @@
           skills: "Технические навыки",
           experience: "Профессиональный опыт",
           competencies: "Ключевые компетенции",
-          awards: "Награды и признание"
+          awards: "Награды и признание",
+          volunteering: "Общественная деятельность и волонтерство"
       },
       skills: [
         { category: 'Фронтенд', details: 'SvelteKit, Svelte 5 (Runes), JavaScript (ES6+), HTML5, CSS3, Tailwind CSS v4' },
@@ -100,8 +114,8 @@
         {
           category: 'Языки',
           items: [
-            { name: 'Русский', proficiency: 'Свободно' },
-            { name: 'Румынский', proficiency: 'Свободно' },
+            { name: 'Русский', proficiency: 'Родной' },
+            { name: 'Румынский', proficiency: 'Родной' },
             { name: 'Английский', proficiency: 'C1 Professional (сильное понимание и обучаемость; разговорная речь ограничена практикой)' }
           ]
         }
@@ -110,7 +124,7 @@
         {
           title: 'Основатель и Ведущий Full-Stack Инженер',
           company: 'Gifokamp',
-          company_url: 'gifokamp.com', // ADDED
+          company_url: 'gifokamp.com',
           period: '2023 – настоящее время',
           subtitle: 'Собственный стартап',
           details: [
@@ -119,7 +133,7 @@
             'Руководил фронтенд-разработкой с использованием <strong>SvelteKit</strong>, обеспечив высокореактивный, интуитивно понятный и производительный пользовательский интерфейс. Осуществил стратегический переход кодовой базы на <strong>Svelte 5 (Runes)</strong> для улучшения управления состоянием и обеспечения будущего развития.',
             'Разработал и внедрил схему NoSQL базы данных в реальном времени в <strong>Firestore</strong>, оптимизированную для сложных запросов и пользовательского контента, включая медиа-насыщенные «плейлисты» и учебные пары.',
             'Разработал и интегрировал сопутствующее <strong>Chrome-расширение</strong> для «веб-клиппинга», позволяющее пользователям беспрепятственно захватывать и импортировать контент, демонстрируя понимание целостного многоплатформенного пользовательского опыта.',
-            'Интегрировал комплекс передовых сторонних сервисов: используя <strong>TTS (Text-to-Speech), STT (Speech-to-Text) и API для перевода</strong> для создания ключевых мультисенсорных функций изучения языков; применяя <strong>Gemini AI</strong> для интеллектуальной обработки контента; и внедряя инструменты, такие как <strong>Nanobanana и Google Analytics</strong>, для оптимизации производительности и анализа данных.',
+            'Интегрировал комплекс передовых сторонних сервисов: используя <strong>TTS (Text-to-Speech), STT (Speech-to-Text), и API для перевода</strong> для создания ключевых мультисенсорных функций изучения языков; применяя <strong>Gemini AI</strong> для интеллектуальной обработки контента; и внедряя инструменты, такие как <strong>Nanobanana и Google Analytics</strong>, для оптимизации производительности и анализа данных.',
             'Разработал многоуровневую стратегию кэширования с использованием <strong>IndexedDB</strong> для персистентности на стороне клиента и <strong>Redis</strong> для кэширования на стороне сервера, создав высокопроизводительный, оптимистичный UI, одержимый скоростью.'
           ]
         }
@@ -140,7 +154,19 @@
         {
             title: "Разработка с помощью ИИ",
             detail: "Профессионально использую возможности передовых инструментов ИИ как в разработке, так и в исследованиях для ускорения рабочих процессов, решения сложных задач и эффективного создания надежных решений."
+        },
+        {
+            title: "Предпринимательская устойчивость",
+            detail: "Подтвержденная инициатива с детства, включая запуск собственных проектов с нуля и последовательную адаптацию для преодоления значительных трудностей, в том числе неблагоприятных жизненных обстоятельств и профессиональных неудач. Двигаю проекты вперед с непоколебимой решимостью и нацеленностью на результат."
         }
+      ],
+      volunteering: [
+          {
+              title: "Волонтер-ИТ-специалист",
+              organization: "Еврейская Община Молдовы (JCM)",
+              period: "2022",
+              detail: "Разработал и внедрил ИТ-решения для оптимизации логистики и координации помощи еврейским беженцам из Украины во время кризиса 2022 года. <a href='https://jcm.md/news/v3/' target='_blank' rel='noopener noreferrer'>Подробнее</a>."
+          }
       ]
     }
   };
@@ -159,8 +185,7 @@
   }
 </script>
 
-<div class="container">
-  
+<div class="container">  
   <div class="lang-switcher">
     <button class:active={lang === 'en'} on:click={() => lang = 'en'}>EN</button>
     <button class:active={lang === 'ru'} on:click={() => lang = 'ru'}>RU</button>
@@ -244,6 +269,18 @@
                 <h4>{award.title}</h4>
                 <h5>{award.issuer} | {award.year}</h5>
                 <p>{award.detail}</p>
+            </div>
+        {/each}
+    </section>
+
+    <!-- NEW VOLUNTEERING SECTION -->
+    <section id="volunteering">
+        <h3>{t.sections.volunteering}</h3>
+        {#each t.volunteering as vol}
+            <div class="volunteering-item">
+                <h4>{vol.title}</h4>
+                <h5>{vol.organization} | {vol.period}</h5>
+                <p>{@html vol.detail}</p>
             </div>
         {/each}
     </section>

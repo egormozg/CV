@@ -281,16 +281,28 @@ a:hover {
 }
 
 
-/* Experience, Awards, Training Sections */
-.job, .award-item, .competency-item {
+/* Experience, Awards, Competencies, Volunteering Sections */
+.job, .award-item, .competency-item, .volunteering-item {
     margin-bottom: 2rem;
 }
 
 /* Competencies Section */
 .competency-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Fixed to 3 columns */
     gap: 1.5rem;
+}
+
+/* Responsive design for competencies grid */
+@media (max-width: 992px) { /* Adjust breakpoint as needed */
+  .competency-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Revert to auto-fit on smaller screens */
+  }
+}
+@media (max-width: 768px) {
+  .competency-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .competency-item {
