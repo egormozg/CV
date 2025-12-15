@@ -1,22 +1,45 @@
 :root {
-  --primary-color: #0d6efd; /* A slightly richer blue */
-  --secondary-color: #6c757d; /* A cool gray */
-  --background-color: #f4f7f9;
+  --primary-color: #0d6efd;
+  --secondary-color: #495057; /* Darkened for more contrast */
+  --background-color: #f8f9fa; /* Slightly lighter */
   --surface-color: #ffffff;
   --text-primary: #212529;
-  --text-secondary: #495057;
-  --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  --box-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.1);
-  --border-radius: 12px;
+  --text-secondary: #495057; /* Same as secondary for consistency */
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --border-color: #dee2e6;
+  --border-color-hover: var(--primary-color);
+  --border-radius: 10px; /* Slightly sharper radius */
+  --border-width: 2px; /* Increased border width */
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #e9ecef;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    border: 3px solid #e9ecef;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #343a40;
+}
+
+
 /* Reset some browser defaults */
-body, h1, h2, h3, h4, h5, p, ul {
+body, h1, h2, h3, h4, h5, p, ul, button {
   margin: 0;
   padding: 0;
   font-family: var(--font-family);
   color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, strong {
+    font-weight: 700;
 }
 
 body {
@@ -29,11 +52,57 @@ ul {
   list-style: none;
 }
 
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #0a58ca;
+}
+
+
 .container {
     max-width: 950px;
     width: 100%;
     margin: 2rem;
+    position: relative; /* For language switcher positioning */
 }
+
+/* Language Switcher */
+.lang-switcher {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 10;
+    background: var(--background-color);
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    border: 1px solid var(--border-color);
+}
+.lang-switcher button {
+    border: none;
+    background: transparent;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-secondary);
+}
+.lang-switcher button:not(.active):hover {
+    background-color: #e9ecef;
+    color: var(--text-primary);
+}
+.lang-switcher button.active {
+    background: var(--primary-color);
+    color: var(--surface-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 
 /* Header Card Styles */
 .card {
@@ -41,18 +110,21 @@ ul {
   background: var(--surface-color);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  border: var(--border-width) solid var(--border-color);
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--box-shadow-hover);
+    border-color: var(--border-color-hover);
 }
 
 .card-left {
   flex: 0 0 320px;
+  background-color: #e9ecef;
+  border-right: var(--border-width) solid var(--border-color);
 }
 
 .profile-photo {
@@ -72,8 +144,6 @@ ul {
 
 .card-right h1 {
   font-size: 2.8rem;
-  font-weight: 700;
-  color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -99,13 +169,7 @@ ul {
 
 .contact-info a {
   color: var(--text-secondary);
-  text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s;
-}
-
-.contact-info a:hover {
-  color: var(--primary-color);
 }
 
 .contact-info i {
@@ -121,6 +185,7 @@ ul {
     padding: 50px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    border: var(--border-width) solid var(--border-color);
 }
 
 .cv-content section {
@@ -137,7 +202,6 @@ ul {
 
 .cv-content h3 {
     font-size: 1.8rem;
-    font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 2rem;
     display: inline-block;
@@ -169,14 +233,14 @@ ul {
 }
 
 .skill-item {
-    background: #f8f9fa;
+    background: var(--background-color);
     padding: 1.5rem;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    border: var(--border-width) solid var(--border-color);
+    transition: border-color 0.3s ease;
 }
 .skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--box-shadow);
+    border-color: var(--border-color-hover);
 }
 
 .skill-item strong {
@@ -208,7 +272,6 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .language-tag strong {
@@ -219,7 +282,7 @@ ul {
 
 
 /* Experience, Awards, Training Sections */
-.job, .award-item, .training-item, .competency-item {
+.job, .award-item, .competency-item {
     margin-bottom: 2rem;
 }
 
@@ -231,15 +294,15 @@ ul {
 }
 
 .competency-item {
-    background: #f8f9fa;
+    background: var(--background-color);
     padding: 1.5rem;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    border: var(--border-width) solid var(--border-color);
+    transition: border-color 0.3s ease;
 }
 
 .competency-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--box-shadow);
+    border-color: var(--border-color-hover);
 }
 
 .competency-item h4 {
@@ -256,7 +319,6 @@ ul {
 
 .cv-content h4 {
     font-size: 1.4rem;
-    font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 0.25rem;
 }
@@ -266,6 +328,10 @@ ul {
     font-weight: 500;
     color: var(--secondary-color);
     margin-bottom: 1.5rem;
+}
+
+.cv-content h5 a {
+    font-weight: 700;
 }
 
 .cv-content i {
@@ -299,7 +365,6 @@ ul {
 
 .cv-content li strong {
     color: var(--text-primary);
-    font-weight: 700;
 }
 
 
@@ -307,6 +372,11 @@ ul {
 @media (max-width: 768px) {
   .container {
     margin: 1rem;
+    position: static;
+  }
+  .lang-switcher {
+      top: 10px;
+      right: 10px;
   }
   .card {
     flex-direction: column;
