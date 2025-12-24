@@ -29,17 +29,17 @@
           volunteering: "Community & Volunteering"
       },
       skills: [
-        { category: 'Frontend', details: 'SvelteKit, Svelte 5 (Runes), Flutter, JavaScript (ES6+), Tailwind CSS v4' },
+        { category: 'Frontend', details: 'JavaScript, Flutter, SvelteKit, Svelte 5 (Runes), Tailwind CSS v4' },
         { category: 'Backend', details: 'Node.js, Firebase Cloud Functions, Serverless Architecture, REST API Design' },
         { category: 'Databases & Cloud', details: 'Firestore (NoSQL), Google Cloud Platform (GCP), Firebase Suite' },
-        { category: 'AI & Security', details: 'Gemini AI Integration, OWASP Top 10, Network Security (TryHackMe)' },
+        { category: 'AI & Security', details: 'Gemini AI Integration, OWASP Top 10, Cybersecurity (TryHackMe)' },
         {
           category: 'Languages',
           items: [
             { name: 'Russian', proficiency: 'Native' },
             { name: 'Romanian', proficiency: 'Native' },
-            { name: 'English', proficiency: 'C1 Professional' },
-            { name: 'Hebrew', proficiency: 'Beginner (Learning)' }
+            { name: 'Hebrew', proficiency: 'Beginner (Learning)' },
+            { name: 'English', proficiency: 'C1 Professional Proficiency (Strong comprehension and learning; conversational fluency limited by practice)' }
           ]
         }
       ],
@@ -167,14 +167,14 @@
         { category: 'Фронтенд', details: 'JavaScript, Flutter, SvelteKit, Svelte 5 (Runes), Tailwind CSS v4' },
         { category: 'Бэкенд', details: 'Node.js, Firebase Cloud Functions, Serverless Architecture, REST API Design' },
         { category: 'Базы данных', details: 'Firestore (NoSQL), Google Cloud Platform (GCP), Firebase Suite' },
-        { category: 'ИИ и Безопасность', details: 'Gemini AI Integration, OWASP Top 10, Сетевая безопасность (TryHackMe)' },
+        { category: 'ИИ и Безопасность', details: 'Gemini AI Integration, OWASP Top 10, Кибербезопасность (TryHackMe)' },
         {
           category: 'Языки',
           items: [
             { name: 'Русский', proficiency: 'Родной' },
             { name: 'Румынский', proficiency: 'Родной' },
-            { name: 'Английский', proficiency: 'C1 Professional' },
-            { name: 'Иврит', proficiency: 'Начальный уровень' }
+            { name: 'Иврит', proficiency: 'Начальный уровень' },
+            { name: 'Английский', proficiency: 'C1 Professional (сильное понимание и обучаемость; разговорная речь ограничена практикой)' }
           ]
         }
       ],
