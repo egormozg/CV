@@ -8,7 +8,7 @@
   const content = {
     en: {
       name: "Egor Spinu",
-      title: "JavaScript Full-Stack Engineer",
+      title: "Full-Stack Engineer | Ben Noah",
       location: "Gornoe, Moldova",
       phone: "+37369445470",
       email: "egor.i.spinu@gmail.com",
@@ -16,27 +16,30 @@
       linkedinUrl: "https://www.linkedin.com/in/egorspinu/",
       website: "gifokamp.com",
       websiteUrl: "https://gifokamp.com",
-      summary: "A self-taught, proactive, and results-driven Full-Stack JavaScript Engineer with a proven track record of architecting and deploying complex web applications from concept to completion. Thrives in high-pressure, ambiguous environments, leveraging exceptional problem-solving skills and a holistic, strategic mindset to see the \"whole picture\" and deliver robust solutions. Combines deep technical expertise in the Svelte/Node.js ecosystem with a practical, hands-on understanding of cybersecurity and proficiency in leveraging cutting-edge AI tools to accelerate development.",
+      objective: "<strong>Academic Goal:</strong> To enroll in the <strong>B.Sc. in Mathematics and Computer Science</strong> program at <strong>Ariel University</strong>.  As a founder developing a startup in the AI era, I recognize that simply using existing tools is not enough. I seek the rigorous mathematical foundation provided by the Faculty to deeply understand the logic, algorithms, and fundamental principles necessary to innovate and build resilient systems for the future.",
+      summary: "A Senior Full-Stack Engineer and entrepreneur currently developing an AI language learning ecosystem. My path has been unconventional: I entered the workforce at 14 to support myself, was married and divorced 12 years ago (no children), and built businesses from scratch. I am applying to Ariel University to bridge my practical experience with deep theoretical mathematics and Computer Science.",
       sections: {
-          summary: "Summary",
+          summary: "Professional Summary",
+          objective: "Objective",
           skills: "Technical Skills",
-          experience: "Professional Experience",
+          experience: "Professional Experience & Entrepreneurship",
+          education: "Education & Certifications",
           competencies: "Core Competencies",
           awards: "Awards & Recognition",
           volunteering: "Community & Volunteering"
       },
       skills: [
-        { category: 'Frontend', details: 'SvelteKit, Svelte 5 (Runes), JavaScript (ES6+), HTML5, CSS3, Tailwind CSS v4' },
+        { category: 'Frontend', details: 'SvelteKit, Svelte 5 (Runes), Flutter, JavaScript (ES6+), Tailwind CSS v4' },
         { category: 'Backend', details: 'Node.js, Firebase Cloud Functions, Serverless Architecture, REST API Design' },
-        { category: 'Databases & Cloud', details: 'Firestore (NoSQL), Google Cloud Platform (GCP), Firebase Suite (Auth, Storage)' },
-        { category: 'Development & DevOps', details: 'Git, GitHub, Vite, Bun, CI/CD Principles, AI-Assisted Development' },
-        { category: 'Cybersecurity', details: 'Network Security, Web Application Vulnerabilities (OWASP Top 10), Penetration Testing Methodologies' },
+        { category: 'Databases & Cloud', details: 'Firestore (NoSQL), Google Cloud Platform (GCP), Firebase Suite' },
+        { category: 'AI & Security', details: 'Gemini AI Integration, OWASP Top 10, Network Security (TryHackMe)' },
         {
           category: 'Languages',
           items: [
             { name: 'Russian', proficiency: 'Native' },
             { name: 'Romanian', proficiency: 'Native' },
-            { name: 'English', proficiency: 'C1 Professional Proficiency (Strong comprehension and learning; conversational fluency limited by practice)' }
+            { name: 'English', proficiency: 'C1 Professional' },
+            { name: 'Hebrew', proficiency: 'Beginner (Learning)' }
           ]
         }
       ],
@@ -46,19 +49,68 @@
           company: 'Gifokamp',
           company_url: 'gifokamp.com',
           period: '2023 – Present',
-          subtitle: 'Personal Startup 🚀',
+          subtitle: 'AI Language Learning Ecosystem',
           details: [
-            'Architected and developed a full-stack, serverless language acquisition platform from the ground up, now supporting ~85 languages through a unique multisensory learning approach. Handled the entire product lifecycle from ideation to deployment and maintenance.',
-            'Engineered a modular, microservices-style backend on <strong>Firebase Cloud Functions</strong>, creating distinct, scalable services for authentication, media processing, and data management.',
-            'Led the frontend development using <strong>SvelteKit</strong>, delivering a highly reactive, intuitive, and performant user interface. Drove the strategic migration of the codebase to <strong>Svelte 5 (Runes)</strong> for improved state management and future-proofing.',
-            'Designed and implemented a real-time NoSQL database schema in <strong>Firestore</strong>, optimized for complex queries and user-generated content including media-rich "playlists" and learning pairs.',
-            'Developed and integrated a companion <strong>Chrome Extension</strong> to act as a "web clipper," enabling users to seamlessly capture and import content, demonstrating an understanding of a cohesive, multi-platform user experience.',
-            'Integrated a comprehensive suite of advanced third-party services: leveraging <strong>TTS (Text-to-Speech), STT (Speech-to-Text), and Translation APIs</strong> for core multi-sensory language acquisition features; utilizing <strong>Gemini AI</strong> for intelligent content processing; and incorporating tools like <strong>Nanobanana and Google Analytics</strong> for optimized performance and data-driven insights.',
-            'Engineered a multi-layered caching strategy using <strong>IndexedDB</strong> for client-side persistence and <strong>Redis</strong> for server-side caching, creating a highly performant, optimistic UI obsessed with speed.'
+            'Developing a complete ecosystem for language acquisition.',
+            '<strong>Web App:</strong> Built with <strong>Svelte 5</strong> and Firebase. Features custom visual playlists, AI pronunciation coaching, and a Spaced Repetition System (SRS).',
+            '<strong>AI Language Clipper (Chrome Extension):</strong> An intelligent agent using <strong>Gemini AI</strong> for context-aware translation and seamless integration with the user account.',
+            '<strong>Mobile:</strong> Cross-platform <strong>Flutter</strong> application. (in development).'
+          ]
+        },
+        {
+          title: 'Co-Founder & Director',
+          company: 'Logoritm Corp',
+          period: '2015 – 2018',
+          subtitle: 'Construction & Heating Engineering',
+          details: [
+            'Co-founded a firm providing construction and heating engineering services. Responsible for technical oversight and client management.',
+            '<strong>Project Management:</strong> Single-handedly organized a sold-out Magician Concert at the <strong>National Philharmonic</strong> on April 1st, 2017. Handled venue negotiation, promotion, ticket sales, and logistics.',
+            '(Company is currently passive as partner relocated to Russia).'
+          ]
+        },
+        {
+          title: 'HVAC Technical Specialist',
+          company: 'Self-Employed',
+          period: '2010 – 2015',
+          details: [
+            'Worked full-time installing heating systems to gain financial independence.',
+            'Learned real-world systems and problem-solving through practical application.'
           ]
         }
       ],
+      education: [
+        {
+            title: "Ericksonian Hypnotherapy Certification",
+            institution: "IGiSP",
+            year: "2012 – 2014",
+            note: "Completed an intensive 200-hour course under the program of Mikhail Ginzburg. Focused on cognitive structures and linguistics. Pursued this path as self-study proved more effective than the formal university curriculum."
+        },
+        {
+            title: "Psychopedagogy (2 Years Completed)",
+            institution: "Free International University of Moldova (ULIM)",
+            year: "2012 – 2014",
+            note: "Completed 4 semesters. Left to focus on specialized certification in hypnotherapy and business ventures."
+        },
+        {
+            title: "Innovation Engineering",
+            institution: "Technical University of Moldova (TUM)",
+            year: "Sep 2010 – Nov 2010",
+            note: "Completed 1st semester coursework. Withdrew to work full-time in heating system installations due to financial necessity."
+        },
+        {
+            title: "Baccalaureate Diploma",
+            institution: "Liceul Teoretic Romanesti",
+            year: "2010",
+            note: "Studied at Romanesti; Exams taken at Center 'Ion Vatamanu'.<br><strong>Mathematics: 8.34</strong> | Physics: 8.96 | Informatics: 8.55"
+        }
+      ],
       awards: [
+        {
+          title: 'International Memory Championships',
+          issuer: 'Memory Sports',
+          year: '2018 - 2019',
+          detail: '<strong>Asia Open (Bali, 2019):</strong> Ranked 90th out of ~170 competitors. <strong>Korea OPEN (2018):</strong> Ranked 122nd out of ~150 competitors.'
+        },
         {
           title: 'Google for Startups Program',
           issuer: 'Ideation Funding',
@@ -68,16 +120,16 @@
       ],
       competencies: [
         {
-            title: "Rapid & On-the-Go Learning",
-            detail: "Proven ability to quickly master new technologies and complex domains. The intensive 240-hour cybersecurity program on TryHackMe is a recent example of this self-directed, practical approach to skill acquisition."
+            title: "Autodidactic Mastery",
+            detail: "Proven ability to master complex domains independently, from Full-Stack coding and English (C1) to Cognitive Science."
         },
         {
-            title: "AI-Powered Development",
-            detail: "Professionally leverage the power of cutting-edge AI tools in both development and research to accelerate workflows, solve complex problems, and deliver robust solutions efficiently."
+            title: "System Architecture",
+            detail: "Experience designing and executing complex systems, whether in software (Gifokamp), engineering (Logoritm), or event logistics."
         },
         {
             title: "Entrepreneurial Resilience",
-            detail: "Proven initiative from childhood, having bootstrapped ventures and consistently adapted to overcome significant challenges, including adverse life events and professional setbacks. Drives projects forward with unwavering determination and a results-oriented mindset."
+            detail: "Proven initiative since childhood, bootstrapping ventures and adapting to significant challenges. I drive projects forward with determination and a results-oriented mindset."
         }
       ],
       volunteering: [
@@ -85,13 +137,13 @@
               title: "IT Specialist Volunteer",
               organization: "Jewish Community of Moldova (JCM)",
               period: "2022",
-              detail: "Developed and implemented IT solutions to streamline logistics and coordinate aid for Jewish refugees from Ukraine during the onset of the 2022 war. <a href='https://jcm.md/news/v3/' target='_blank' rel='noopener noreferrer'>Learn more</a>."
+              detail: "Developed and implemented IT solutions to streamline logistics and coordinate aid for Jewish refugees from Ukraine during the onset of the 2022 war. <a href='https://jcm.md/news/v3/' target='_blank'>Learn more</a>."
           }
       ]
     },
     ru: {
       name: "Егор Спыну",
-      title: "JavaScript Full-Stack Инженер",
+      title: "Full-Stack Инженер | Бен Ноах",
       location: "Горное, Молдова",
       phone: "+37369445470",
       email: "egor.i.spinu@gmail.com",
@@ -99,68 +151,120 @@
       linkedinUrl: "https://www.linkedin.com/in/egorspinu/",
       website: "gifokamp.com",
       websiteUrl: "https://gifokamp.com",
-      summary: "Инициативный и ориентированный на результат Full-Stack JavaScript инженер-самоучка с подтвержденным опытом проектирования и развертывания сложных веб-приложений от концепции до завершения. Преуспевает в условиях высокого давления и неопределенности, используя исключительные навыки решения проблем и целостное стратегическое мышление, чтобы видеть \"полную картину\" и предоставлять надежные решения. Сочетает глубокие технические знания в экосистеме Svelte/Node.js с практическим пониманием кибербезопасности и умением использовать передовые инструменты ИИ для ускорения разработки.",
+      objective: "<strong>Цель:</strong> Поступление на программу <strong>B.Sc. Математика и Компьютерные Науки</strong> в <strong>Ариэльский Университет</strong>. Развивая стартап в эпоху ИИ, понимаю, что простого использования инструментов недостаточно. Мне необходим строгий математический фундамент, предоставляемый факультетом, чтобы глубоко понимать логику, алгоритмы и принципы, необходимые для создания инновационных систем.",
+      summary: "Senior Full-Stack инженер и предприниматель, разрабатывающий экосистему для изучения языков на базе ИИ. C 14 лет начал работать, рано женился и развелся (детей нет), строил бизнес с нуля. Хочу поступить в Ариэльский университет, чтобы объединить практический опыт с глубокой теоретической подготовкой в области математики и компьютерных наук.",
       sections: {
           summary: "Обо мне",
+          objective: "Цель",
           skills: "Технические навыки",
-          experience: "Профессиональный опыт",
+          experience: "Профессиональный опыт и Бизнес",
+          education: "Образование и Сертификаты",
           competencies: "Ключевые компетенции",
-          awards: "Награды и признание",
-          volunteering: "Общественная деятельность и волонтерство"
+          awards: "Награды и Достижения",
+          volunteering: "Волонтерство"
       },
       skills: [
-        { category: 'Фронтенд', details: 'SvelteKit, Svelte 5 (Runes), JavaScript (ES6+), HTML5, CSS3, Tailwind CSS v4' },
+        { category: 'Фронтенд', details: 'JavaScript, Flutter, SvelteKit, Svelte 5 (Runes), Tailwind CSS v4' },
         { category: 'Бэкенд', details: 'Node.js, Firebase Cloud Functions, Serverless Architecture, REST API Design' },
-        { category: 'Базы данных и облако', details: 'Firestore (NoSQL), Google Cloud Platform (GCP), Firebase Suite (Auth, Storage)' },
-        { category: 'Разработка и DevOps', details: 'Git, GitHub, Vite, Bun, CI/CD Principles, AI-Assisted Development' },
-        { category: 'Кибербезопасность', details: 'Сетевая безопасность, уязвимости веб-приложений (OWASP Top 10), методологии пентестинга' },
+        { category: 'Базы данных', details: 'Firestore (NoSQL), Google Cloud Platform (GCP), Firebase Suite' },
+        { category: 'ИИ и Безопасность', details: 'Gemini AI Integration, OWASP Top 10, Сетевая безопасность (TryHackMe)' },
         {
           category: 'Языки',
           items: [
             { name: 'Русский', proficiency: 'Родной' },
             { name: 'Румынский', proficiency: 'Родной' },
-            { name: 'Английский', proficiency: 'C1 Professional (сильное понимание и обучаемость; разговорная речь ограничена практикой)' }
+            { name: 'Английский', proficiency: 'C1 Professional' },
+            { name: 'Иврит', proficiency: 'Начальный уровень' }
           ]
         }
       ],
       experiences: [
         {
-          title: 'Основатель и Ведущий Full-Stack Инженер',
+          title: 'Основатель и Full-Stack Инженер',
           company: 'Gifokamp',
           company_url: 'gifokamp.com',
-          period: '2023 – настоящее время',
-          subtitle: 'Собственный стартап 🚀',
+          period: '2023 – Наст. время',
+          subtitle: 'Экосистема изучения языков с ИИ',
           details: [
-            'Спроектировал и разработал с нуля полностековую, бессерверную платформу для изучения языков, поддерживающую ~85 языков через уникальный мультисенсорный подход. Управлял всем жизненным циклом продукта от идеи до развертывания и поддержки.',
-            'Разработал модульный бэкенд в стиле микросервисов на <strong>Firebase Cloud Functions</strong>, создав отдельные, масштабируемые сервисы для аутентификации, обработки медиа и управления данными.',
-            'Руководил фронтенд-разработкой с использованием <strong>SvelteKit</strong>, обеспечив высокореактивный, интуитивно понятный и производительный пользовательский интерфейс. Осуществил стратегический переход кодовой базы на <strong>Svelte 5 (Runes)</strong> для улучшения управления состоянием и обеспечения будущего развития.',
-            'Разработал и внедрил схему NoSQL базы данных в реальном времени в <strong>Firestore</strong>, оптимизированную для сложных запросов и пользовательского контента, включая медиа-насыщенные «плейлисты» и учебные пары.',
-            'Разработал и интегрировал сопутствующее <strong>Chrome-расширение</strong> для «веб-клиппинга», позволяющее пользователям беспрепятственно захватывать и импортировать контент, демонстрируя понимание целостного многоплатформенного пользовательского опыта.',
-            'Интегрировал комплекс передовых сторонних сервисов: используя <strong>TTS (Text-to-Speech), STT (Speech-to-Text), и API для перевода</strong> для создания ключевых мультисенсорных функций изучения языков; применяя <strong>Gemini AI</strong> для интеллектуальной обработки контента; и внедряя инструменты, такие как <strong>Nanobanana и Google Analytics</strong>, для оптимизации производительности и анализа данных.',
-            'Разработал многоуровневую стратегию кэширования с использованием <strong>IndexedDB</strong> для персистентности на стороне клиента и <strong>Redis</strong> для кэширования на стороне сервера, создав высокопроизводительный, оптимистичный UI, одержимый скоростью.'
+            'Разработка полной экосистемы для изучения языков.',
+            '<strong>Web App:</strong> Создано на <strong>Svelte 5</strong> и Firebase. Включает визуальные плейлисты, ИИ-коучинг произношения и систему интервальных повторений (SRS).',
+            '<strong>AI Language Clipper (Chrome Extension):</strong> Интеллектуальный агент на базе <strong>Gemini AI</strong> для контекстного перевода и интеграции с аккаунтом пользователя.',
+            '<strong>Mobile:</strong> Кроссплатформенное приложение на <strong>Flutter</strong>. (в разработке).'
           ]
+        },
+        {
+          title: 'Соучредитель и Директор',
+          company: 'Logoritm Corp',
+          period: '2015 – 2018',
+          subtitle: 'Строительство и Инженерия',
+          details: [
+            'Соучредитель фирмы по оказанию строительных и инженерных услуг. Ответственный за технический надзор и работу с клиентами.',
+            '<strong>Управление проектами:</strong> В одиночку организовал концерт иллюзионистов в <strong>Национальной Филармонии</strong> 1 апреля 2017 года (аншлаг). Управлял переговорами с площадкой, рекламой, продажей билетов и логистикой.',
+            '(Компания пассивна в связи с переездом партнера в Россию).'
+          ]
+        },
+        {
+          title: 'Технический специалист HVAC',
+          company: 'Частная практика',
+          period: '2010 – 2015',
+          details: [
+            'Работал полный день на установке систем отопления для достижения финансовой независимости.',
+            'Изучал реальные системы и решение проблем через практику.'
+          ]
+        }
+      ],
+      education: [
+        {
+            title: "Сертификация по Эриксоновскому гипнозу",
+            institution: "ИГиСП",
+            year: "2012 – 2014",
+            note: "Завершил интенсивный 200-часовой курс по программе Михаила Гинзбурга. Фокус на когнитивных структурах и лингвистике. Выбрал этот путь, так как самообразование оказалось эффективнее университетской программы."
+        },
+        {
+            title: "Психопедагогика (2 курса)",
+            institution: "Международный Независимый Университет Молдовы (ULIM)",
+            year: "2012 – 2014",
+            note: "Закончил 4 семестра. Оставил учебу, чтобы сосредоточиться на сертификации по гипнотерапии и бизнесе."
+        },
+        {
+            title: "Инженерия и инновации",
+            institution: "Технический Университет Молдовы (TUM)",
+            year: "Сен 2010 – Ноя 2010",
+            note: "Прошел обучение в 1-м семестре. Вынужден был оставить учебу и работать полный день на монтаже систем отопления из-за финансовой необходимости."
+        },
+        {
+            title: "Диплом Бакалавра",
+            institution: "Теоретический Лицей Романешты",
+            year: "2010",
+            note: "Обучение в Романештах; Экзамены в центре 'Ион Ватаману'.<br><strong>Математика: 8.34</strong> | Физика: 8.96 | Информатика: 8.55"
         }
       ],
       awards: [
         {
-          title: 'Программа Google for Startups',
-          issuer: 'Ideation финансирование',
+          title: 'Международные соревнования по памяти',
+          issuer: 'Memory Sports',
+          year: '2018 - 2019',
+          detail: '<strong>Asia Open (Бали, 2019):</strong> 90-е место из ~170. <strong>Korea OPEN (2018):</strong> 122-е место из ~150.'
+        },
+        {
+          title: 'Google for Startups Program',
+          issuer: 'Ideation Funding',
           year: '2024',
-          detail: 'Получил финансирование и облачные кредиты в знак признания инновационной концепции проекта, прочной технической базы и потенциала для рыночного влияния.'
+          detail: 'Получил финансирование для развития облачной инфраструктуры в знак признания инновационной концепции проекта, сильной технической базы и потенциала положительного влияния.'
         }
       ],
       competencies: [
         {
-            title: "Быстрое обучение «на лету»",
-            detail: "Подтвержденная способность быстро осваивать новые технологии и сложные области. Интенсивная 240-часовая программа по кибербезопасности на TryHackMe является свежим примером такого самостоятельного, практического подхода к приобретению навыков."
+            title: "Мастерство самообучения",
+            detail: "Способность самостоятельно осваивать сложные области: от Full-Stack разработки и английского (C1) до когнитивистики."
         },
         {
-            title: "Разработка с помощью ИИ",
-            detail: "Профессионально использую возможности передовых инструментов ИИ как в разработке, так и в исследованиях для ускорения рабочих процессов, решения сложных задач и эффективного создания надежных решений."
+            title: "Архитектура систем",
+            detail: "Опыт проектирования и реализации сложных систем, будь то программное обеспечение (Gifokamp), инженерия (Logoritm) или логистика мероприятий."
         },
         {
-            title: "Предпринимательская устойчивость",
-            detail: "Подтвержденная инициатива с детства, включая запуск собственных проектов с нуля и последовательную адаптацию для преодоления значительных трудностей, в том числе неблагоприятных жизненных обстоятельств и профессиональных неудач. Двигаю проекты вперед с непоколебимой решимостью и нацеленностью на результат."
+            title: "Предпринимательская стойкость",
+            detail: "Проявленная с детства инициатива: запуск собственных проектов и адаптация к сложным вызовам. Я продвигаю проекты с решимостью и ориентацией на результат."
         }
       ],
       volunteering: [
@@ -168,14 +272,13 @@
               title: "Волонтер-ИТ-специалист",
               organization: "Еврейская Община Молдовы (JCM)",
               period: "2022",
-              detail: "Разработал и внедрил ИТ-решения для оптимизации логистики и координации помощи еврейским беженцам из Украины в начале войны 2022 года. <a href='https://jcm.md/news/v3/' target='_blank' rel='noopener noreferrer'>Подробнее</a>."
+              detail: "Разработал и внедрил ИТ-решения для оптимизации логистики и координации помощи еврейским беженцам из Украины в начале войны 2022 года. <a href='https://jcm.md/news/v3/' target='_blank'>Подробнее</a>."
           }
       ]
     }
   };
 
   let t = $derived(content[lang]);
-
   $effect(() => {
     if (typeof document !== 'undefined') {
       document.documentElement.lang = lang;
@@ -207,6 +310,12 @@
   </header>
 
   <main class="cv-content">
+    
+    <section id="objective" class="objective-section">
+        <h3>{t.sections.objective}</h3>
+        <p>{@html t.objective}</p>
+    </section>
+
     <section id="summary">
         <h3>{t.sections.summary}</h3>
         <p>{@html t.summary}</p>
@@ -216,7 +325,7 @@
       <h3>{t.sections.skills}</h3>
       <div class="skills-grid">
         {#each t.skills as skill}
-          <div class="skill-item">
+          <div class="skill-item" class:full-width={skill.category === 'Languages' || skill.category === 'Языки'}>
             <strong>{skill.category}</strong>
             {#if skill.category === 'Languages' || skill.category === 'Языки'}
               <div class="language-tags">
@@ -237,7 +346,7 @@
       {#each t.experiences as exp}
         <div class="job">
           <h4>{exp.title}</h4>
-          <h5>{exp.company} (<a href="https://{exp.company_url}" target="_blank" rel="noopener noreferrer">{exp.company_url}</a>) | {exp.period}</h5>
+          <h5>{exp.company} {#if exp.company_url}(<a href="https://{exp.company_url}" target="_blank" rel="noopener noreferrer">{exp.company_url}</a>){/if} | {exp.period}</h5>
           {#if exp.subtitle}<i>{exp.subtitle}</i>{/if}
           <ul>
             {#each exp.details as detail}
@@ -248,13 +357,26 @@
       {/each}
     </section>
 
+    <section id="education">
+        <h3>{t.sections.education}</h3>
+        {#each t.education as edu}
+            <div class="education-item">
+                <h4>{edu.title}</h4>
+                <h5>{edu.institution} | {edu.year}</h5>
+                {#if edu.note}
+                    <p class="edu-note">{@html edu.note}</p>
+                {/if}
+            </div>
+        {/each}
+    </section>
+
     <section id="competencies">
       <h3>{t.sections.competencies}</h3>
       <div class="competency-grid">
          {#each t.competencies as competency}
             <div class="competency-item">
                 <h4>{competency.title}</h4>
-                <p>{competency.detail}</p>
+                <p>{@html competency.detail}</p>
             </div>
           {/each}
       </div>
@@ -266,12 +388,11 @@
             <div class="award-item">
                 <h4>{award.title}</h4>
                 <h5>{award.issuer} | {award.year}</h5>
-                <p>{award.detail}</p>
+                <p>{@html award.detail}</p> 
             </div>
         {/each}
     </section>
 
-    <!-- NEW VOLUNTEERING SECTION -->
     <section id="volunteering">
         <h3>{t.sections.volunteering}</h3>
         {#each t.volunteering as vol}
@@ -284,3 +405,68 @@
     </section>
   </main>
 </div>
+
+<style>
+    .objective-section {
+        background-color: #f0f9ff;
+        border-left: 4px solid #0077b6;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .education-item {
+        margin-bottom: 1.5rem;
+    }
+    
+    .edu-note {
+        font-size: 0.95rem;
+        color: #555;
+        margin-top: 0.3rem;
+        font-style: italic;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    
+    /* MODIFIED: Forced 3 columns for competencies */
+    .competency-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .competency-item {
+        background: #f9f9f9;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #eee;
+    }
+    
+    .competency-item h4 {
+        color: #0077b6;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Logic to span full width */
+    .skill-item.full-width {
+        grid-column: 1 / -1;
+    }
+    
+    .language-tags {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+        /* On small mobile screens, revert to 1 column so text is readable */
+        .competency-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
