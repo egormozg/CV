@@ -1,7 +1,7 @@
 *, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -38,8 +38,6 @@
 
 /* Reset some browser defaults */
 body, h1, h2, h3, h4, h5, p, ul, button {
-  margin: 0;
-  padding: 0;
   font-family: var(--font-family);
   color: var(--text-primary);
 }
@@ -53,6 +51,8 @@ body {
   display: flex;
   justify-content: center;
   overflow-wrap: break-word;
+  background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px); /* Subtle gray dots */
+  background-size: 25px 25px; /* Spacing of the dots */
 }
 
 ul {
@@ -62,10 +62,11 @@ ul {
 a {
     color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.2s, text-decoration 0.2s;
 }
 a:hover {
-    color: #0a58ca;
+    color: var(--primary-color); /* Ensure text changes to primary blue on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
 
@@ -105,7 +106,7 @@ a:hover {
 }
 .lang-switcher button.active {
     background: var(--primary-color);
-    color: var(--surface-color);
+    color: #fff; /* Ensure text is white */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -151,6 +152,7 @@ a:hover {
 .card-right h1 {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
+  color: var(--text-primary);
 }
 
 .card-right h2 {
@@ -270,8 +272,8 @@ a:hover {
 
 .language-tag {
     background: var(--primary-color);
-    color: var(--surface-color);
-    padding: 0.5rem 0.9rem;
+    color: #ffffff !important; /* FORCE WHITE */
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -281,9 +283,13 @@ a:hover {
 }
 
 .language-tag strong {
-    color: var(--surface-color);
+    color: #ffffff !important; /* FORCE WHITE */
     margin-bottom: 0;
     font-size: 0.9rem;
+}
+
+.language-tag .proficiency-text {
+    color: #ffffff !important; /* FORCE WHITE */
 }
 
 
@@ -371,13 +377,14 @@ a:hover {
 
 .cv-content li strong {
     color: var(--text-primary);
+    font-weight: 700;
 }
 
 
 /* Responsive design */
 @media (max-width: 992px) {
   .competency-grid, .skills-grid {
-    grid-template-columns: 1fr; /* Force single column on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -394,12 +401,14 @@ a:hover {
     flex-direction: column;
   }
   .card-left {
-    flex: 0 0 auto; /* Allow the card left side to shrink */
+    flex: 0 0 auto;
     height: 300px;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
   }
-  .card-right { padding: 25px; }
-  .cv-content { padding: 25px; }
+  .card-right { padding: 30px 25px; }
+  .cv-content { padding: 30px 25px; }
 
   .card-right h1 { font-size: 2.2rem; }
-  .cv-content h3 { font-size: 1.6rem; }
+  .cv-content h3 { font-size: 1.5rem; }
 }

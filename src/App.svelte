@@ -46,7 +46,7 @@
           company: 'Gifokamp',
           company_url: 'gifokamp.com',
           period: '2023 – Present',
-          subtitle: 'Personal Startup',
+          subtitle: 'Personal Startup 🚀',
           details: [
             'Architected and developed a full-stack, serverless language acquisition platform from the ground up, now supporting ~85 languages through a unique multisensory learning approach. Handled the entire product lifecycle from ideation to deployment and maintenance.',
             'Engineered a modular, microservices-style backend on <strong>Firebase Cloud Functions</strong>, creating distinct, scalable services for authentication, media processing, and data management.',
@@ -85,7 +85,7 @@
               title: "IT Specialist Volunteer",
               organization: "Jewish Community of Moldova (JCM)",
               period: "2022",
-              detail: "Developed and implemented IT solutions to streamline logistics and coordinate aid for Jewish refugees from Ukraine during the 2022 crisis. <a href='https://jcm.md/news/v3/' target='_blank' rel='noopener noreferrer'>Learn more</a>."
+              detail: "Developed and implemented IT solutions to streamline logistics and coordinate aid for Jewish refugees from Ukraine during the onset of the 2022 war. <a href='https://jcm.md/news/v3/' target='_blank' rel='noopener noreferrer'>Learn more</a>."
           }
       ]
     },
@@ -129,7 +129,7 @@
           company: 'Gifokamp',
           company_url: 'gifokamp.com',
           period: '2023 – настоящее время',
-          subtitle: 'Собственный стартап',
+          subtitle: 'Собственный стартап 🚀',
           details: [
             'Спроектировал и разработал с нуля полностековую, бессерверную платформу для изучения языков, поддерживающую ~85 языков через уникальный мультисенсорный подход. Управлял всем жизненным циклом продукта от идеи до развертывания и поддержки.',
             'Разработал модульный бэкенд в стиле микросервисов на <strong>Firebase Cloud Functions</strong>, создав отдельные, масштабируемые сервисы для аутентификации, обработки медиа и управления данными.',
@@ -168,7 +168,7 @@
               title: "Волонтер-ИТ-специалист",
               organization: "Еврейская Община Молдовы (JCM)",
               period: "2022",
-              detail: "Разработал и внедрил ИТ-решения для оптимизации логистики и координации помощи еврейским беженцам из Украины во время кризиса 2022 года. <a href='https://jcm.md/news/v3/' target='_blank' rel='noopener noreferrer'>Подробнее</a>."
+              detail: "Разработал и внедрил ИТ-решения для оптимизации логистики и координации помощи еврейским беженцам из Украины в начале войны 2022 года. <a href='https://jcm.md/news/v3/' target='_blank' rel='noopener noreferrer'>Подробнее</a>."
           }
       ]
     }
